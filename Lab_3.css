@@ -1,0 +1,225 @@
+h1{
+    color: red;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 25px;
+    background-color: black;
+}
+body{
+    background-image: url(https://st3.depositphotos.com/1028367/12648/v/600/depositphotos_126481054-stock-illustration-colorful-facades-of-service-trades.jpg);
+}
+.btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+.one{
+    float:left;
+    font-weight: normal;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    margin-right: 300px;
+    margin-left: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.two{
+    float:left;
+    font-weight: normal;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    margin-right: 300px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+.three{
+    float:left;
+    font-weight: normal;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    height: 30px;
+    cursor: pointer;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+.window {
+    text-align: left;
+    border: 5px solid red;
+    background-color: white;
+    font-size: 25px;
+    margin-left: 380px;
+
+}
+/* властивості модального вікна за замовчуванням */
+.modal {
+    position: fixed; /*фіксоване положення */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* сколір фону */
+    z-index: 1050;
+    opacity: 0; /* за промовчанням модальне вікно прозоре */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анімація переходу */
+    pointer-events: none; /* елемент невидимий для подій миші */
+    margin: 0;
+    padding: 0;
+}
+/* при відображенні модального вікна */
+.modal:target {
+    opacity: 1; /* робимо вікно видимим */
+	  pointer-events: auto; /* елемент бачимо для подій миші */
+    overflow-y: auto; /* додаємо прокручування по y, коли елемент не поміщається на сторінку */
+}
+/* ширина модального вікна та його відступи від екрану */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для відображення модального вікна по центру */
+  }
+}
+/* властивості для блоку, що містить контент модального вікна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* властивості для заголовка модального вікна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* властивості для кнопки "Закрити" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* властивості для кнопки "Закрити" при знаходженні її у фокусі або наведенні */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* властивості для блоку, що містить основний вміст вікна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+.bt1{
+    margin-right: 235px;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal-cart {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-cart {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close-cart {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-cart:hover,
+  .close-cart:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

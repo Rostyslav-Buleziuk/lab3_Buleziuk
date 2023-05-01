@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Lab_3.css" />
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+  <title>Lab_2</title>
+</head>
+
+<body>
+  <h1>Laboratory 2. Buleziuk Rostyslav</h1>
+
+<nav><button onclick="openCart()">Cart</button><a href="./news.html">News</a></nav>
+
+  <div class="one">
+    <button class="btn" onclick="getFruits()">Фрукти</button>
+    <div id="fruits"></div>
+  </div>
+  <div class="two">
+    <button class="btn" onclick="getVegetables()">Овочі</button>
+    <div id="vegetables"></div>
+  </div>
+  <div class="three">
+    <button class="btn" onclick="getSweets()">Солодощі</button>
+    <div id="sweets"></div>
+  </div>
+
+
+  <div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Оформлення підписки (;</h3>
+          <a href="#close" title="Close" class="close" onclick="closeModal()">×</a>
+        </div>
+        <div class="modal-body">
+          <p>
+            <button class="bt1" onclick="subscribe()">Підписатися ♥ </button>
+            <button class="bt2" onclick="subscribe()">Не підписуватися </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart" class="modal-cart">
+    <div class="modal-dialog">
+      <div class="modal-content-cart">
+        <div class="modal-header">
+          <h3 class="modal-title">Cart </h3>
+          <a href="#close" title="Close" class="close-cart" onclick="closeCart()">×</a>
+        </div>
+        <div id="cartBody" class="modal-body">
+          
+        </div>
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="Lab_3.js"></script>
+
+</body>
+
+</html>
